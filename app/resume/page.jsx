@@ -5,7 +5,7 @@ import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 
 const about = {
   title: "About me",
-  description: "lorem some random text to fill the space",
+  description: "Here are some information about me :)",
   info: [
     {
       fieldName: "Name",
@@ -52,7 +52,7 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: "My experience",
-  description: "lorem lorem lorem",
+  description: "Companies I've been working for:",
   items: [
     {
       company: "Tech Solutions Inc.",
@@ -83,19 +83,25 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: "My education",
-  description: "lorem lorem lorem",
+  description: "This online university taught me a lot, including concepts in Information Technology, real coding practices, and general knowledge like Calculus. The Full Stack course helped me understand how the Back End works through real-time practice.",
   items: [
     {
-      institution: "Western Governors University",
+      institution: "WGU",
       degree: "Computer Science",
       duration: "2022 - 2024",
+    },
+
+    {
+      institution: "Online Course platform",
+      degree: "Full Stack Web Development Bootcamp",
+      duration: "2019 - 2021",
     },
   ]
 };
 
 const skills = {
   title: "My skills",
-  description: "lorem lorem lorem",
+  description: "Skills I mastered:",
 
   skillList: [
     {
@@ -225,7 +231,7 @@ const Resume = () => {
 
                             <div className='flex items-center gap-3'>
                               <span className='w-[6px] h-[6px] rounded-full bg-accent'>
-
+                                  
                               </span>
 
                               <p className='text-white/60'>
@@ -240,13 +246,51 @@ const Resume = () => {
             </TabsContent>
 
             {/* skills */}
-            <TabsContent value="skills" className="w-full">
+            <TabsContent value="skills" className="w-full h-full">
+                <div className='flex flex-col gap-[30px]'>
+                    <div className='flex flex-col gap-[30px] text-center xl:text-left'>
+                      <h3 className='text-4xl font-bold'>{skills.title}</h3>
 
+                      <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{skills.description}</p>
+                    </div>
+
+                    <ul className='grid grid-cols-2 sd:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]'>
+                      {skills.skillList.map((skill, index) => {
+                        return <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group'>
+                                <div className='text-6xl group-hover:text-accent trnasition-all duration-300'>{skill.icon}</div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className='capitalize'>{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      })}
+                    </ul>
+                </div>
             </TabsContent>
 
             {/* about */}
-            <TabsContent value="about" className="w-full">
+            <TabsContent value="about" className="w-full text-clip xl:text-left">
+                <div className='flex flex-col gap-[30px]'>
+                  <h3 className='text-4xl font-bold'>
+                    {about.title}
+                  </h3>
 
+                  <p className='max-w-[600px] text-white/70 mx-auto xl:mx-0'>{about.description}</p>
+
+                  <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0'>
+                    {about.info.map((item, index) => {
+                      return <li className='flex items-center justify-center xl:justify-start gap-4' key={index}>
+                        <span className='text-white/60'>{item.fieldName}</span>
+                        <span className='text-xl'>{item.fieldValue}</span>
+                      </li>
+                    })}
+                  </ul>
+                </div>
             </TabsContent>
           </div>
         </Tabs>
