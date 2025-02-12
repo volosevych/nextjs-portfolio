@@ -20,10 +20,12 @@ const Home = () => {
               <h1 className="h1 mb-10">Hello I&#39;m <br/> <span className="text-accent">Ana Hoffmann</span></h1>
 
               <div className="flex flex-col xl:flex-row gap-8 items-center">
+                <a href="/assets/cv/cv.pdf" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
                 </Button>
+                </a>
 
                 <div className="mb-8 xl:mb-0">
                   <Socials containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"/>

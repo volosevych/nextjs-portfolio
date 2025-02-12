@@ -19,7 +19,7 @@ const Photo = () => {
           animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" } }}
         >
           <Image 
-            src={`/assets/photo/photo-2.png`} 
+            src={`/assets/photo.png`} 
             priority 
             quality={100} 
             fill 
