@@ -13,28 +13,13 @@ const about = {
     },
 
     {
-      fieldName: "Phone",
-      fieldValue: "(+1) 385 436 7585"
-    },
-
-    {
       fieldName: "Experience",
       fieldValue: "4 Years"
     },
 
     {
-      fieldName: "Discord",
-      fieldValue: "@sdupid#1111"
-    },
-
-    {
       fieldName: "Nationality",
       fieldValue: "Ukrainian"
-    },
-
-    {
-      fieldName: "Email",
-      fieldValue: "anastasiiavolosevych@gmail.com"
     },
 
     {
@@ -55,28 +40,22 @@ const experience = {
   description: "Companies I've been working for:",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "VEON Services & Technologies, LLC",
+      position: "Front-End Developer",
+      duration: "2024 - Present",
     },
 
     {
-      company: "Web Design",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "Legion Entertainment",
+      position: "Front-End Developer",
+      duration: "2025 - Present",
     },
 
     {
-      company: "E-commerse Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      company: "Amazon",
+      position: "Warehouse Associate",
+      duration: "2021 - 2024",
     },
-
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    }
   ]
 };
 

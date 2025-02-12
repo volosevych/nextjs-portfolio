@@ -2,35 +2,27 @@
 
 import { BsArrowDownRight } from 'react-icons/bs';
 import Link from 'next/link';
-import { Description } from '@radix-ui/react-dialog';
 
 const services = [
   {
     num: '01',
     title: "Web Development",
     description: "soluta officiis? Itaque, veniam minima. Id saepe officiis quos dolore dignissimos minima!",
-    href: "",
+    href: "/contact",
   },
 
   {
     num: '02',
-    title: "UI/UX Design",
+    title: "Back End Development",
     description: "soluta officiis? Itaque, veniam minima. Id saepe officiis quos dolore dignissimos minima!",
-    href: "",
+    href: "/contact",
   },
 
   {
     num: '03',
-    title: "Logo Design",
-    description: "soluta officiis? Itaque, veniam minima. Id saepe officiis quos dolore dignissimos minima!",
-    href: "",
-  },
-
-  {
-    num: '04',
     title: "SEO",
     description: "soluta officiis? Itaque, veniam minima. Id saepe officiis quos dolore dignissimos minima!",
-    href: "",
+    href: "/contact",
   }
 ];
 

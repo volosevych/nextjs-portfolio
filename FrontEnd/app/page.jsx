@@ -17,12 +17,7 @@ const Home = () => {
                 Web Developer
               </span>
 
-              <h1 className="h1">Hello I&#39;m <br/> <span className="text-accent">Ana Hoffmann</span></h1>
-
-              <p className="max-w-[500px] my-9 text-white/80">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Accusamus obcaecati consequatur, minus at illum voluptatibus 
-              </p>
+              <h1 className="h1 mb-10">Hello I&#39;m <br/> <span className="text-accent">Ana Hoffmann</span></h1>
 
               <div className="flex flex-col xl:flex-row gap-8 items-center">
                 <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">

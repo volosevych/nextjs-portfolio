@@ -31,11 +31,6 @@ module.exports = {
 				DEFAULT: '#00ff99',
 				hover: '#00e187',
 			},
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
   		}
   	}
   },
