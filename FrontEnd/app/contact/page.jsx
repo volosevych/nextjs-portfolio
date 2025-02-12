@@ -79,7 +79,7 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
                 Looking for a skilled web developer to bring your vision to life? 
                 Whether you need a stunning website, seamless functionality, 
