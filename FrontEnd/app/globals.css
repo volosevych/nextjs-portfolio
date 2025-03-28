@@ -8,7 +8,7 @@
   }
 
   .h1 {
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[42px] xl:text-[60px] leading-[1.3] font-semibold;
   }
 
   .h2 {
@@ -22,10 +22,8 @@
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }
-  
+
   .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
   }
-};
-
-
+}
