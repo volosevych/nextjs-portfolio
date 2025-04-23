@@ -59,10 +59,46 @@ const projects = [
     description:
       "A fully responsive SaaS landing page built with React and Tailwind CSS, designed for seamless user experience across all devices. Deployed on GitHub Pages for fast and reliable hosting",
 
-    stack: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "Love" }],
+    stack: [{ name: "React" }, { name: "Tailwind CSS" }],
     image: "/assets/projects/project-3.png",
     live: "https://volosevych.github.io/positivus/",
     github: "https://github.com/volosevych/positivus",
+  },
+
+  {
+    num: "04",
+    category: "Fullstack",
+    title: "project 4",
+    description:
+      "This is a simple React-based web app that integrates the Ximilar AI Card Grading API to analyze trading cards. Users can upload an image, and the API returns grading results based on centering, edges, corners, and surface condition.",
+
+    stack: [
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "React" },
+      { name: "Ximilar API" },
+      { name: "Vite" },
+    ],
+    image: "/assets/projects/project-4.png",
+    live: "https://card-grading-app.netlify.app",
+    github: "https://github.com/volosevych/card-grading-app",
+  },
+
+  {
+    num: "05",
+    category: "frontend",
+    title: "project 5",
+    description:
+      "The site showcases a collection of RuneScape private servers, featuring a login and sign-up system. Designed for smooth navigation and user-friendly interaction, the project focuses on delivering a sleek UI and solid functionality for game enthusiasts exploring private server options. CSS, designed for seamless user experience across all devices.",
+
+    stack: [
+      { name: "HTML" },
+      { name: "Bootstrap/CSS" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/projects/project-5.png",
+    live: "https://volosevych.github.io/RSPS/",
+    github: "https://github.com/volosevych/RSPS",
   },
 ];
 
@@ -103,7 +139,7 @@ const Work = () => {
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-base text-accent">
                       {item.name}
                       {index !== project.stack.length - 1 && ","}
                     </li>

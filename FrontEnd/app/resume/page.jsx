@@ -9,6 +9,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { TbBrandTypescript } from "react-icons/tb";
 
 const about = {
   title: "About me",
@@ -16,7 +17,7 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Anastasiia Hoffmann",
+      fieldValue: "Anastasiia Volosevych",
     },
 
     {
@@ -114,6 +115,11 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: "next.js",
+    },
+
+    {
+      icon: <TbBrandTypescript />,
+      name: "TypeScript",
     },
 
     {
@@ -290,14 +296,11 @@ const Resume = () => {
                   {about.description}
                 </p>
 
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 gap-y-4 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li
-                        className="flex items-center justify-center xl:justify-start gap-4"
-                        key={index}
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
+                      <li className="flex gap-2" key={index}>
+                        <span className="text-white/60">{item.fieldName}:</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );

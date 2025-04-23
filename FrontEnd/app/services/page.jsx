@@ -13,13 +13,6 @@ const services = [
   },
   {
     num: "02",
-    title: "Back-End Integration",
-    description:
-      "Seamless integration of front-end with APIs and back-end services using tools like Node.js, Laravel, and Firebase. Focused on functionality, security, and speed.",
-    href: "/contact",
-  },
-  {
-    num: "03",
     title: "SEO Optimization",
     description:
       "Optimized code structure, semantic HTML, and best practices to improve search engine visibility and performance for your website.",
@@ -34,7 +27,7 @@ const Services = () => {
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
+          className="grid grid-cols-1 gap-[60px]"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
